@@ -3,8 +3,7 @@ package dao;
 import java.sql.ResultSet;
 import java.util.List;
 import domain.BookBean;
-import enums.BookQuery;
-import enums.DBMS;
+import enums.*;
 import factory.DatabaseFactory;
 
 public class BookDAOImpl implements BookDAO{
@@ -48,7 +47,7 @@ public class BookDAOImpl implements BookDAO{
 	}
 
 	@Override
-	public List<BookBean> selectByRent(String rent) {
+	public List<BookBean> selectByRent() {
 		try {
 			ResultSet rs = DatabaseFactory.createDatabase(DBMS.ORACLE).getConnection().createStatement().executeQuery(
 					BookQuery.SELECT_RENT.toString());

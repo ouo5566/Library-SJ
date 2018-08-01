@@ -33,7 +33,7 @@ public class BookServiceImpl implements BookService{
 	}
 
 	@Override
-	public List<BookBean> searchByRent(String rent) {
+	public List<BookBean> searchByRent() {
 		// TODO Auto-generated method stub
 		return null;
 	}

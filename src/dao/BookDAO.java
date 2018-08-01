@@ -8,7 +8,7 @@ public interface BookDAO {
 	public void updateBook(BookBean bean);
 	public void deleteBook(BookBean bean);
 	public List<BookBean> selectBookList();
-	public List<BookBean> selectByRent(String rent);
+	public List<BookBean> selectByRent();
 	public List<BookBean> selectByTitle(String title);
 	public List<BookBean> selectByAuthor(String author);
 	public String countByBook();

@@ -6,7 +6,7 @@ public enum DBConstants {
 	public String toString() {
 		String s = "";
 		switch (this) {
-		case ORACLE:
+		case ORACLE_DRIVER:
 			s = "oracle.jdbc.driver.OracleDriver";
 			break;
 		case CONNECTION_URL:
